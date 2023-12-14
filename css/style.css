@@ -1,0 +1,61 @@
+/**/
+p.txt_basic{width:92%; margin:0 auto;}
+
+div.login{width:92%; margin:0 auto;}
+div.login p{padding:0 0 18px 0;}
+div.login div.form{text-align:center;}
+
+/* DIARY */
+div.search_cy{width:92%; margin:0 auto; color:#efefef; text-align:right; font-size:0.7em; padding:0 0 4px 0;}
+div.search_cy a{color:#ffa200; font-weight:bold;}
+
+.board{width:92%; margin:0 auto;}
+table.board th{font-size:0.7em; background:#ffc560; color:#fff; padding:4px 0 5px 0;}
+table.board td{font-size:0.7em; color:#666; text-align:center; border-bottom:1px dashed #ccc; padding:6px 0 4px 0;}
+table.board td.subject{text-align:left;}
+table.board td.subject span{font-size:0.8em;}
+table.board td.subject a{color:#666;}
+table.board td.num{font-size:0.6em;}
+
+div.board_view{width:92%; margin:0 auto;}
+div.board_view h2{position:relative; font-size:0.7em; background:#ffc560; color:#fff; padding:4px 0 5px 4px;}
+div.board_view h2 span{position:absolute; top:5px; right:8px;}
+div.board_view h2 span a{color:#fff; text-decoration:none; font-weight:normal; font-size:0.9em;}
+div.board_view p{font-size:0.7em; color:#666; border-bottom:1px solid #ccc; padding:6px 6px 14px 6px; line-height:160%;}
+div.board_view div.name{color:#ccc; font-size:0.7em; padding:4px 8px 8px 4px;}
+div.board_view div.name a{color:#ccc;}
+
+div.comment_form{position:relative; width:92%; margin:0 auto 0 auto; padding:4px 0 28px 0; text-align:center; border-bottom:2px solid #ccc; background:#f2f2f2;}
+div.comment_form textarea{font-size:0.7em; border:1px dashed #ffa200; margin:0 0 4px 0; color:#666;}
+div.comment_form .btn_right{margin-right:6px;}
+
+table.comment{width:92%; margin:0 auto; padding:10px 0 0 0;}
+table.comment td{font-size:0.7em; color:#666; border-bottom:1px dashed #ccc; padding:4px 0 4px 0;}
+table.comment td.name{padding-left:10px;}
+table.comment td.comment{padding-left:8px;}
+table.comment td.regdate{text-align:right; font-size:0.6em;}
+table.comment td.btn{text-align:center;}
+
+div.btn{position:relative; margin:0 auto; width:92%; padding:14px 0 0 0;}
+input.btn_left{float:left; margin-right:6px;}
+input.btn_right{float:right; margin-left:6px;}
+input.btn_right_apply{float:right; margin-left:6px; position:absolute; top:11px; right:0px;}
+.btn_center{text-align:center;}
+
+table.board_apply{width:92%; margin:0 auto;}
+table.board_apply th{font-size:0.7em; padding:3px 8px 0 0; color:#666; text-align:right; vertical-align:top;}
+table.board_apply td{padding:2px 0 2px 0;}
+
+
+/* CULTURE */
+/** Book **/
+div.book_list{width:92%; margin:0 auto 10px auto; position:relative; border-top:1px dashed #ccc; border-bottom:1px dashed #ccc; padding:4px 8px 8px 4px; min-height:109px;}
+div.book_list img.thum{float:left; position:relative; width:76px; height:109px; margin:0 8px 0 0; display:inline;}
+div.book_list h2{font-size:0.8em; color:#333; padding:4px 0 2px 0;}
+div.book_list div.rate{color:#ffa200;font-size:1em;}
+div.book_list div.info{color:#ccc; font-size:0.7em; padding:2px 0 8px 0;}
+div.book_list div.info span{color:#666;}
+div.book_list p{color:#666; font-size:0.7em; line-height:140%;}
+div.book_list div.edit{position:absolute; top:4px; right:0; font-size:0.7em;}
+
+
