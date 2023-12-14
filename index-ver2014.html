@@ -1,0 +1,1138 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>HANAJUNG</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/common.css"/>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#work-snb > li > a").on("click", function(){
+				var selectYear = $(this).attr("data");
+
+				$("#work-snb > li > a").removeClass("on");
+				$(this).addClass("on");
+
+				$(".work-list li").hide();
+				$(selectYear).fadeIn();
+
+				return false;
+			});
+
+			$(".work-list > li").each(function(){
+				var randomColor = Math.floor(Math.random() * (7) + 1);
+				//$(this).addClass("rambgc-" + randomColor);
+				//$(this).append('<span class="bg_color'+' rambg-' + randomColor + '"></span>');
+				$(".bar", this).addClass("rambgc-" + randomColor);
+			});
+		});
+	</script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<h1 class="home">HANAJUNG</h1>
+		<ul class="gnb">
+			<li class="on"><a href="work.html">Work</a>
+				<ul class="snb" id="work-snb" style="display:block;">
+					<li>└ <a href="#year-18" data=".year-18">2018</a></li>
+					<li><a href="#year-17" data=".year-17">2017</a></li>
+					<li><a href="#year-16" data=".year-16">2016</a></li>
+					<li><a href="#year-15" data=".year-15">2015</a></li>
+					<li><a href="#year-14" data=".year-14">2014</a></li>
+					<li><a href="#year-13" data=".year-13">2013</a></li>
+					<li><a href="#year-12" data=".year-12">2012</a></li>
+					<li><a href="#year-11" data=".year-11">2011</a></li>
+					<li><a href="#year-10" data=".year-10">2010</a></li>
+					<li><a href="#year-9" data=".year-9">2009</a></li>
+					<li><a href="#year-8" data=".year-8">2008</a></li>
+					<li><a href="#year-7" data=".year-7">2007</a></li>
+					<li><a href="#year-6" data=".year-6">2006</a></li>
+					<li><a href="#year-5" data=".year-5">2005</a></li>
+					<li><a href="#year-4" data=".year-4">2004</a></li>
+				</ul>
+			</li>
+			<!--
+			<li><a href="#">Source</a>
+				<ul class="snb" id="source-snb">
+					<li>└ <a href="#">HTML/CSS</a></li>
+					<li><a href="#">SCRIPT</a></li>
+					<li><a href="#">ETC</a></li>
+				</ul>
+			</li>
+			<li><a href="#">References</a>
+				<ul class="snb" id="refer-snb">
+					<li>└ <a href="#">HTML/CSS</a></li>
+					<li><a href="#">SCRIPT</a></li>
+					<li><a href="#">ETC</a></li>
+				</ul>
+			</li>
+			-->
+		</ul>
+	</div>
+	<div id="container">
+		<div id="content">
+			<ul class="work-list">
+				<li class="year-14 year-15 year-16 year-17 year-18"><img src="images/work/screen-work.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">아이피그룹</dt>
+						<dd>
+							<span class="exp">퍼블리싱팀 재직중</span>
+							<span class="date">2014.10 - ing</span>
+							<span class="link">www.ipgroup.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-16 year-17 year-18"><img src="images/work/screen-ipg-1.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">롯데인터넷면세점</dt>
+						<dd>
+							<span class="exp">인터넷면세점 웹사이트(국문) 이벤트 제작 및 운영</span>
+							<span class="date">2016.09 - ing</span>
+							<span class="link">kor.lottedfs.com</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-14 year-15 year-16"><img src="images/work/screen-ipg-1.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">롯데인터넷면세점</dt>
+						<dd>
+							<span class="exp">인터넷면세점 웹사이트(중문,영문,일문) 이벤트 제작 및 운영</span>
+							<span class="date">2014.10 - 2016.09</span>
+							<span class="link">china.lottedfs.com</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:90%;"><span class="txt">HTML/CSS/Script (90%)</span></span>
+				</li>
+				<li class="year-14"><img src="images/work/screen-work.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">프리랜서</dt>
+						<dd>
+							<span class="exp">프리랜서</span>
+							<span class="date">2014.7 - 9</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-14"><img src="images/work/screen-2014-3.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">대한크라브마가(KKM)</dt>
+						<dd>
+							<span class="exp">크라브마가 협회 웹사이트 제작</span>
+							<span class="date">2014.9</span>
+							<span class="link">www.koreakravmaga.com</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:60%;"><span class="txt">HTML/CSS/Script (60%)</span></span>
+				</li>
+				<li class="year-14"><img src="images/work/screen-2014-1.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">리얼팁(RealTip)</dt>
+						<dd>
+							<span class="exp">스포츠 팁스터 정보 웹사이트 리뉴얼</span>
+							<span class="date">2014.9</span>
+							<span class="link">www.realtip.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-14"><img src="images/work/screen-2014-2.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">SK 리더십센터</dt>
+						<dd>
+							<span class="exp">임원역량진단 시스템 웹사이트 수정 및 리포트 제작</span>
+							<span class="date">2014.7 - 8</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-14 year-13 year-12"><img src="images/work/screen-off.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">개인</dt>
+						<dd>
+							<span class="exp">여성의류 쇼핑몰 웹사이트 리뉴얼 및 유지보수 (후이즈몰/메이크샵 솔루션)</span>
+							<span class="date">2011.1 - 2014.6</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-12 year-11"><img src="images/work/screen-work.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">프리랜서</dt>
+						<dd>
+							<span class="exp">프리랜서</span>
+							<span class="date">2011.1 - 2012.10</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-12"><img src="images/work/screen-2011-12.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">구글 코리아</dt>
+						<dd>
+							<span class="exp">캠페인 안내 뉴스레터(DM) 2회차 제작</span>
+							<span class="date">2012.7 - 10</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML (100%)</span></span>
+				</li>
+				<li class="year-12"><img src="images/work/screen-2011-10.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">에스이콜와이지(S=YZ)</dt>
+						<dd>
+							<span class="exp">패션 브랜드 웹사이트 제작 및 유지보수</span>
+							<span class="date">2012.3 - 7</span>
+							<span class="link">www.sequalyz.com</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-12"><img src="images/work/screen-2011-11.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">진흥 비쥬아르</dt>
+						<dd>
+							<span class="exp">조화 및 인테리어 용품 유통 기업 웹사이트 제작</span>
+							<span class="date">2012.4 - 5</span>
+							<span class="link">www.bj21.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script/Asp/MS-SQL (100%)</span></span>
+				</li>
+				<li class="year-12 year-11"><img src="images/work/screen-2011-3.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">피티온(PTON)</dt>
+						<dd>
+							<span class="exp">퍼스널 트레이닝 웹사이트 제작 및 유지보수</span>
+							<span class="date">2011.1 - 2012.2</span>
+							<span class="link">www.pton.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script/Asp/MS-SQL (100%)</span></span>
+				</li>
+				<li class="year-11"><img src="images/work/screen-2011-9.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">나이키(NIKE)</dt>
+						<dd>
+							<span class="exp">프로모션 웹페이지 제작</span><br/>
+							<span class="date">2011.11</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-11"><img src="images/work/screen-2011-8.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">태광그룹</dt>
+						<dd>
+							<span class="exp">미디어 콘텐츠 I`M Tcast 웹사이트 제작</span>
+							<span class="date">2011.9 - 10</span>
+							<span class="link">www.imtcast.com</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:50%;"><span class="txt">HTML/CSS/Script (50%)</span></span>
+				</li>
+				<li class="year-11"><img src="images/work/screen-2011-7.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">정상JLS</dt>
+						<dd>
+							<span class="exp">어학원 CHESS Plus 메인 웹페이지 제작</span>
+							<span class="date">2011.8</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS (100%)</span></span>
+				</li>
+				<li class="year-11"><img src="images/work/screen-2011-5.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">KT</dt>
+						<dd>
+							<span class="exp">NFC HUB 관리자(ADMIN) 웹사이트 제작</span>
+							<span class="date">2011.6 - 8</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-11"><img src="images/work/screen-2011-4.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">서울관광마케팅</dt>
+						<dd>
+							<span class="exp">이노스텔 숙박 예약 웹사이트(사용자,관리자) 제작</span>
+							<span class="date">2011.6 - 8</span>
+							<span class="link">innostel.visitseoul.net</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-11"><img src="images/work/screen-2011-6.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">인텔리웍스</dt>
+						<dd>
+							<span class="exp">번역 서비스 기업 웹사이트 제작 및 유지보수</span>
+							<span class="date">2011.2 - 7</span>
+							<span class="link">www.intelliworks.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-11"><img src="images/work/screen-2011-1.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">국토해양부</dt>
+						<dd>
+							<span class="exp">우측보행 캠페인 웹사이트 제작</span>
+							<span class="date">2011.1</span>
+							<span class="link">www.rightwalk.go.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script/Asp/MS-SQL (100%)</span></span>
+				</li>
+				<li class="year-11"><img src="images/work/screen-2011-2.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">생활성서</dt>
+						<dd>
+							<span class="exp">가톨릭 인터넷 웹매거진 1회차 제작</span>
+							<span class="date">2011.1</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS (100%)</span></span>
+				</li>
+				<li class="year-11"><img src="images/work/screen-2011-13.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">라비또(heyrabito)</dt>
+						<dd>
+							<span class="exp">라비또 브랜드 블로그 커스터마이징</span>
+							<span class="date">2011.1</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS (100%)</span></span>
+				</li>
+				<li class="year-11 year-10 year-9"><img src="images/work/screen-work.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">㈜애드플러스커뮤니케이션</dt>
+						<dd>
+							<span class="exp">디자인실 소속</span>
+							<span class="date">2011.1 - 2012.10</span>
+							<span class="link">www.adplus.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-11 year-10"><img src="images/work/screen-adc-22.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">금복주</dt>
+						<dd>
+							<span class="exp">기업 웹사이트 구축</span>
+							<span class="date">2010.10 - 2011.1</span>
+							<span class="link">www.kumbokju.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-11 year-10"><img src="images/work/screen-adc-23.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">금복주</dt>
+						<dd>
+							<span class="exp">참소주 제품 홍보 웹사이트 제작</span> 
+							<span class="date">2010.8 - 2011.1</span>
+							<span class="link">www.charmsoju.com</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-11 year-10 year-9"><img src="images/work/screen-adc-15.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">삼성지구환경연구소</dt>
+						<dd>
+							<span class="exp">연구소 웹사이트 제작 및 유지보수</span> 
+							<span class="date">2009.12 - 2011.1</span>
+							<span class="link">www.greensamsung.com</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-11 year-10 year-9"><img src="images/work/screen-adc-17.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">삼성지구환경연구소</dt>
+						<dd>
+							<span class="exp">연구소 웹사이트(영문) 제작 및 유지보수</span> 
+							<span class="date">2009.12 - 2011.1</span>
+							<span class="link">www.greensamsung.com</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-11 year-10 year-9"><img src="images/work/screen-adc-16.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">삼성지구환경연구소</dt>
+						<dd>
+							<span class="exp">임직원용 커뮤니티 웹사이트 제작 및 유지보수</span> 
+							<span class="date">2009.12 - 2011.1</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-11 year-10 year-9"><img src="images/work/screen-adc-1.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">현대해운</dt>
+						<dd>
+							<span class="exp">기업 웹사이트 유지보수</span> 
+							<span class="date">2009.6 - 2011.1</span>
+							<span class="link">www.cyhds.com</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10"><img src="images/work/screen-adc-26.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">계림요업</dt>
+						<dd>
+							<span class="exp">제품 홍보 웹사이트 시안 제작 (jquery 모션 작업)</span> 
+							<span class="date">2010.12</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10"><img src="images/work/screen-adc-24.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">금복주</dt>
+						<dd>
+							<span class="exp">참소주, 스타일 소주 모바일 앱 이벤트 페이지 제작</span> 
+							<span class="date">2010.11 - 12</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10"><img src="images/work/screen-off.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">금복주</dt>
+						<dd>
+							<span class="exp">스타일 소주 제품 홍보 웹사이트 제작</span> 
+							<span class="date">2010.8 - 12</span>
+							<span class="link">www.stylesoju.com</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10"><img src="images/work/screen-adc-18.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">정상JLS</dt>
+						<dd>
+							<span class="exp">어학원 쇼핑몰 웹사이트 제작</span> 
+							<span class="date">2010.2 - 2010.12</span>
+							<span class="link">mall.gojls.com/jlsf</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10"><img src="images/work/screen-adc-33.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">정상JLS</dt>
+						<dd>
+							<span class="exp">어학원 쇼핑몰 관리자 웹사이트 제작</span> 
+							<span class="date">2010.2 - 2010.12</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10 year-9"><img src="images/work/screen-adc-8.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">우리아이희망네트워크</dt>
+						<dd>
+							<span class="exp">희망네트워크 센터 정보 웹사이트 제작 및 유지보수</span> 
+							<span class="date">2009.9 - 2010.12</span>
+							<span class="link">wooriai.childreninhope.net</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10 year-9"><img src="images/work/screen-adc-7.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">우리아이희망네트워크</dt>
+						<dd>
+							<span class="exp">희망의 공부방 웹사이트 제작 및 유지보수</span> 
+							<span class="date">2009.9 - 2010.12</span>
+							<span class="link">wooriai.childreninhope.net</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10 year-9"><img src="images/work/screen-adc-9.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">우리아이희망네트워크</dt>
+						<dd>
+							<span class="exp">센터 지점별 커뮤니티 웹사이트 제작 및 유지보수</span> 
+							<span class="date">2009.9 - 2010.12</span>
+							<span class="link">wooriai.childreninhope.net</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10 year-9"><img src="images/work/screen-adc-10.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">삼성코닝정밀소재</dt>
+						<dd>
+							<span class="exp">기업 웹사이트 리뉴얼 및 유지보수</span> 
+							<span class="date">2009.8 - 2010.12</span>
+							<span class="link">www.samsungscp.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10 year-9"><img src="images/work/screen-adc-11.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">삼성코닝정밀소재</dt>
+						<dd>
+							<span class="exp">웹매거진 더뷰 제작</span> 
+							<span class="date">2009.8 - 2010.12</span>
+							<span class="link">www.samsungscp.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10 year-9"><img src="images/work/screen-adc-3.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">삼성카드</dt>
+						<dd>
+							<span class="exp">웹매거진 크레월드, 푸르진 제작</span> 
+							<span class="date">2009.7 - 2010.12</span>
+							<span class="link">www.creworld.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10"><img src="images/work/screen-adc-25.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">CJ나눔재단</dt>
+						<dd>
+							<span class="exp">도너스캠프 프로모션 페이지 제작</span> 
+							<span class="date">2010.10</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10"><img src="images/work/screen-adc-21.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">네오위즈인터넷(NEOWIZ)</dt>
+						<dd>
+							<span class="exp">기업 웹사이트 리뉴얼</span> 
+							<span class="date">2010.8 - 10</span>
+							<span class="link">www.neowizinternet.com</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10"><img src="images/work/screen-adc-20.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">국립중앙도서관</dt>
+						<dd>
+							<span class="exp">국제도서관연맹 보존복원분과(IFLA PAC) 웹사이트 제작</span> 
+							<span class="date">2010.7 - 10</span>
+							<span class="link">www.nl.go.kr/iflapac</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10"><img src="images/work/screen-adc-19.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">한국환경산업기술원</dt>
+						<dd>
+							<span class="exp">녹색성장체험관(EGG HALL) 홍보 웹사이트 제작</span> 
+							<span class="date">2010.5 - 10</span>
+							<span class="link">www.egg.go.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10"><img src="images/work/screen-adc-12.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">삼성코닝정밀소재</dt>
+						<dd>
+							<span class="exp">채용 정보 웹사이트 제작</span> 
+							<span class="date">2010.8 - 9</span>
+							<span class="link">www.samsungscp.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10"><img src="images/work/screen-adc-29.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">금복주</dt>
+						<dd>
+							<span class="exp">기업 웹사이트 시안 제작 (jquery 모션 작업)</span> 
+							<span class="date">2010.7</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10"><img src="images/work/screen-adc-30.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">금복주</dt>
+						<dd>
+							<span class="exp">스타일 소주 제품 홍보 웹사이트 시안 제작 (jquery 모션 작업)</span> 
+							<span class="date">2010.7</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10"><img src="images/work/screen-adc-28.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">RED스튜디오</dt>
+						<dd>
+							<span class="exp">스튜디오 홍보 웹사이트 구축</span>
+							<span class="date">2010.5 - 6</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10"><img src="images/work/screen-adc-31.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">금복주</dt>
+						<dd>
+							<span class="exp">참소주 제품 홍보 웹사이트 시안 제작 (jquery 모션 작업)</span> 
+							<span class="date">2010.5</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10"><img src="images/work/screen-adc-27.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">헨리한센</dt>
+						<dd>
+							<span class="exp">브랜드 웹사이트 시안 제작 (jquery 모션 작업)</span> 
+							<span class="date">2010.5</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10 year-9"><img src="images/work/screen-adc-6.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">동숭아트센터</dt>
+						<dd>
+							<span class="exp">동숭아트홀 홍보 웹사이트(국문,영문) 제작 및 유지보수</span> 
+							<span class="date">2009.8 - 2010.4</span>
+							<span class="link">www.dsartcenter.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10 year-9"><img src="images/work/screen-adc-5.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">동숭아트센터</dt>
+						<dd>
+							<span class="exp">꼭두박물관 홍보 웹사이트(국문,영문) 제작 및 유지보수</span> 
+							<span class="date">2009.6 - 2010.4</span>
+							<span class="link">www.kokdumuseum.com</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10 year-9"><img src="images/work/screen-adc-2.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">현대종합상사</dt>
+						<dd>
+							<span class="exp">기업 웹사이트 유지보수</span> 
+							<span class="date">2009.6 - 2010.4</span>
+							<span class="link">www.hyundaicorp.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10 year-9"><img src="images/work/screen-adc-14.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">에스에프에이(SFA)</dt>
+						<dd>
+							<span class="exp">기업 글로벌 웹사이트(영문,중문,일문) 제작</span> 
+							<span class="date">2009.11 - 2010.2</span>
+							<span class="link">www.sfa.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-10 year-9"><img src="images/work/screen-adc-13.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">에스에프에이(SFA)</dt>
+						<dd>
+							<span class="exp">기업 웹사이트 제작</span> 
+							<span class="date">2009.11 - 2010.2</span>
+							<span class="link">www.sfa.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-9"><img src="images/work/screen-adc-32.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">애드플러스 커뮤니케이션즈</dt>
+						<dd>
+							<span class="exp">기업 웹사이트 제작</span> 
+							<span class="date">2009.10</span>
+							<span class="link">www.adplus.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-9"><img src="images/work/screen-adc-4.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">천재교육</dt>
+						<dd>
+							<span class="exp">교재 소개 웹사이트 유지보수</span> 
+							<span class="date">2009.7 - 2009.10</span>
+							<span class="link">www.chunjae.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-9 year-8"><img src="images/work/screen-work.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">프리랜서</dt>
+						<dd>
+							<span class="exp">프리랜서</span>
+							<span class="date">2008.9 - 2009.6</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-9"><img src="images/work/screen-2008-10.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">아비투스(Abtoos)</dt>
+						<dd>
+							<span class="exp">공부습관 형성 및 분석 정보 웹사이트 리뉴얼</span> 
+							<span class="date">2009.3 - 6</span>
+							<span class="link">www.abtoos.com</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-9"><img src="images/work/screen-2008-9.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">개인</dt>
+						<dd>
+							<span class="exp">디자인 포트폴리오 웹사이트 제작</span> 
+							<span class="date">2009.2 - 6</span>
+							<span class="link">heyrabito.com/minakwag</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-9"><img src="images/work/screen-2008-8.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">개인</dt>
+						<dd>
+							<span class="exp">디자인 포트폴리오 웹사이트 제작</span> 
+							<span class="date">2009.2 - 4</span>
+							<span class="link">heyrabito.com/Source_only1</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-9"><img src="images/work/screen-2008-7.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">씨네21</dt>
+						<dd>
+							<span class="exp">즐감닷컴 영화 스트리밍 서비스 웹사이트 제작</span> 
+							<span class="date">2009.2 - 3</span>
+							<span class="link">www.zlgam.com</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-9"><img src="images/work/screen-2008-6.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">한국무역협회</dt>
+						<dd>
+							<span class="exp">한민족 경제 네트워크 웹사이트 리뉴얼</span> 
+							<span class="date">2009.2</span>
+							<span class="link">www.tradekorea.com</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:30%;"><span class="txt">HTML/CSS/Script (30%)</span></span>
+				</li>
+				<li class="year-9 year-8"><img src="images/work/screen-2008-5.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">GS E-Shop</dt>
+						<dd>
+							<span class="exp">스토킹 커뮤니티 웹사이트 리뉴얼</span> 
+							<span class="date">2008.12 - 2009.1</span>
+							<span class="link">stalking.gseshop.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-8"><img src="images/work/screen-2008-4.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">SK 텔링크</dt>
+						<dd>
+							<span class="exp">1599 전국 대표 번호 서비스 웹사이트 제작</span> 
+							<span class="date">2008.12</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:30%;"><span class="txt">HTML/CSS (30%)</span></span>
+				</li>
+				<li class="year-8"><img src="images/work/screen-2008-3.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">리딩타운</dt>
+						<dd>
+							<span class="exp">온라인 영어학습 웹사이트(본원,어학원) 리뉴얼</span> 
+							<span class="date">2008.11 - 12</span>
+							<span class="link">www.readingtownusa.com</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS (100%)</span></span>
+				</li>
+				<li class="year-8"><img src="images/work/screen-2008-2.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">넥슨</dt>
+						<dd>
+							<span class="exp">온라인 게임 메이플스토리 웹사이트(영문) 리뉴얼</span> 
+							<span class="date">2008.10</span>
+							<span class="link">maplestory.nexon.net</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:50%;"><span class="txt">HTML/CSS (50%)</span></span>
+				</li>
+				<li class="year-8"><img src="images/work/screen-2008-1.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">맥도날드</dt>
+						<dd>
+							<span class="exp">패스트푸드 브랜드 웹사이트 리뉴얼</span> 
+							<span class="date">2008.9</span>
+							<span class="link">www.mcdonalds.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:70%;"><span class="txt">HTML/CSS (70%)</span></span>
+				</li>
+				<li class="year-8 year-7 year-6 year-5"><img src="images/work/screen-work.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">아이온글로벌</dt>
+						<dd>
+							<span class="exp">IT팀 소속 / 퍼블리셔로 입사 후 개발 겸업</span>
+							<span class="date">2005.11 - 2008.9</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script/Asp/Jsp/MS-SQL (100%)</span></span>
+				</li>
+				<li class="year-8"><img src="images/work/screen-igk-19.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">갈더마코리아</dt>
+						<dd>
+							<span class="exp">레스틸렌(Restylane) 제품 홍보 웹사이트 리뉴얼 및 유지보수</span> 
+							<span class="date">2008.6 - 9</span>
+							<span class="link">www.restylane.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">Asp/MS-SQL (100%)</span></span>
+				</li>
+				<li class="year-8"><img src="images/work/screen-igk-18.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">서울시청</dt>
+						<dd>
+							<span class="exp">서울 그랜드 세일 홍보 웹사이트(국문,영문,중문,일문) 제작 및 유지보수</span> 
+							<span class="date">2008.5 - 9</span>
+							<span class="link">www.seoulgrandsale.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:80%;"><span class="txt">Asp/MS-SQL (80%)</span></span>
+				</li>
+				<li class="year-8"><img src="images/work/screen-igk-17.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">갈더마코리아</dt>
+						<dd>
+							<span class="exp">로세릴(Loceryl) 제품 홍보 웹사이트 제작 및 유지보수</span> 
+							<span class="date">2008.3 - 9</span>
+							<span class="link">www.ktoe.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">Asp/MS-SQL (100%)</span></span>
+				</li>
+				<li class="year-8 year-7 year-6 year-5"><img src="images/work/screen-igk-5.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">갈더마코리아</dt>
+						<dd>
+							<span class="exp">기업 웹사이트 리뉴얼 및 유지보수</span> 
+							<span class="date">2005.11 - 2008.9</span>
+							<span class="link">www.galdermakorea.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script/Asp/MS-SQL (100%)</span></span>
+				</li>
+				<li class="year-8 year-7 year-6 year-5"><img src="images/work/screen-off.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">갈더마코리아</dt>
+						<dd>
+							<span class="exp">사내 인트라넷 시스템 유지보수</span> 
+							<span class="date">2005.11 - 2008.9</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script/Asp/MS-SQL (100%)</span></span>
+				</li>
+				<li class="year-8 year-7"><img src="images/work/screen-igk-16.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">갈더마코리아</dt>
+						<dd>
+							<span class="exp">세타필(Cetaphil) 제품 홍보 웹사이트 제작 및 유지보수</span> 
+							<span class="date">2007.12 - 2008.9</span>
+							<span class="link">www.cetaphil.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">Asp/MS-SQL (100%)</span></span>
+				</li>
+				<li class="year-8 year-7"><img src="images/work/screen-igk-9.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">P&G코리아</dt>
+						<dd>
+							<span class="exp">헤드앤숄더(Head & Shoulders) 제품 홍보 웹사이트 유지보수</span> 
+							<span class="date">2007.9 - 2008.7</span>
+							<span class="link">www.headandshoulders.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script/Asp/MS-SQL (100%)</span></span>
+				</li>
+				<li class="year-8 year-7"><img src="images/work/screen-igk-8.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">P&G코리아</dt>
+						<dd>
+							<span class="exp">P&G코리아 기업 웹사이트 유지보수</span> 
+							<span class="date">2007.8 - 2008.7</span>
+							<span class="link">www.pg.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script/Asp/MS-SQL (100%)</span></span>
+				</li>
+				<li class="year-8 year-7"><img src="images/work/screen-igk-15.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">존슨앤존슨</dt>
+						<dd>
+							<span class="exp">클린앤클리어(Clean & Clear) 제품 홍보 웹사이트 리뉴얼 및 유지보수</span> 
+							<span class="date">2007.9 - 2008.3</span>
+							<span class="link">www.cleanandclear.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:30%;"><span class="txt">Asp/MS-SQL (30%)</span></span>
+				</li>
+				<li class="year-8 year-7 year-6"><img src="images/work/screen-igk-7.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">BMW코리아</dt>
+						<dd>
+							<span class="exp">BMW DSS(Dealer Sale Support) 시스템 제작</span> 
+							<span class="date">2006.12 - 2007.8</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:30%;"><span class="txt">Jsp/MS-SQL (30%)</span></span>
+				</li>
+				<li class="year-7 year-6"><img src="images/work/screen-igk-14.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">BMW코리아</dt>
+						<dd>
+							<span class="exp">사내 인트라넷 시스템 제작 및 유지보수</span> 
+							<span class="date">2006.7 - 2007.7</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:50%;"><span class="txt">HTML/CSS/Script/Asp/MS-SQL (50%)</span></span>
+				</li>
+				<li class="year-7 year-6 year-5"><img src="images/work/screen-igk-4.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">BMW코리아</dt>
+						<dd>
+							<span class="exp">BMW 모토라드(Motorrad) 홍보 웹사이트 유지보수</span> 
+							<span class="date">2005.11 - 2007.7</span>
+							<span class="link">www.bmwmotorrad.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script/Jsp/Oracle (100%)</span></span>
+				</li>
+				<li class="year-7 year-6 year-5"><img src="images/work/screen-igk-3.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">BMW코리아</dt>
+						<dd>
+							<span class="exp">BMW 미니(MINI) 홍보 웹사이트 유지보수</span> 
+							<span class="date">2005.11 - 2007.7</span>
+							<span class="link">www.mini.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script/Jsp/Oracle (100%)</span></span>
+				</li>
+				<li class="year-7 year-6 year-5"><img src="images/work/screen-igk-2.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">BMW코리아</dt>
+						<dd>
+							<span class="exp">BMW 자동차 홍보 웹사이트 유지보수</span> 
+							<span class="date">2005.11 - 2007.7</span>
+							<span class="link">www.bmw.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script/Jsp/Oracle (100%)</span></span>
+				</li>
+				<li class="year-6"><img src="images/work/screen-igk-13.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">쏠리테크(SOLiD)</dt>
+						<dd>
+							<span class="exp">영문 기업 웹사이트 제작</span> 
+							<span class="date">2006.10 - 12</span>
+							<span class="link">www.st.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-6"><img src="images/work/screen-igk-12.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">돌비코리아</dt>
+						<dd>
+							<span class="exp">돌비(Dolby) 제품 소개 웹사이트 리뉴얼</span> 
+							<span class="date">2006.9 - 11</span>
+							<span class="link">www.dolby.com</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-6"><img src="images/work/screen-igk-10.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">삼성네트워크</dt>
+						<dd>
+							<span class="exp">Samsung AV 사내 인트라넷 시스템 제작</span> 
+							<span class="date">2006.7 - 9</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-6"><img src="images/work/screen-igk-11.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">존슨앤존슨</dt>
+						<dd>
+							<span class="exp">아큐브(Acuvue) 제품 홍보 웹사이트 리뉴얼</span> 
+							<span class="date">2006.6 - 7</span>
+							<span class="link">www.acuvue.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:70%;"><span class="txt">HTML/CSS/Script (70%)</span></span>
+				</li>
+				<li class="year-6"><img src="images/work/screen-igk-20.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">P&G코리아</dt>
+						<dd>
+							<span class="exp">페브리즈 제품 홍보 이벤트 제작</span> 
+							<span class="date">2006.6</span>
+							<span class="link">www.febreze.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:70%;"><span class="txt">HTML/CSS/Script (70%)</span></span>
+				</li>
+				<li class="year-6"><img src="images/work/screen-igk-6.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">노스웨스트항공(NWA)</dt>
+						<dd>
+							<span class="exp">항공 예약 웹사이트 유지보수</span> 
+							<span class="date">2006.4 - 6</span>
+							<span class="link">hidden</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:50%;"><span class="txt">HTML/CSS (50%)</span></span>
+				</li>
+				<li class="year-6"><img src="images/work/screen-igk-21.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">존슨앤존슨</dt>
+						<dd>
+							<span class="exp">클린앤클리어(Clean & Clear) 쇼핑몰 웹사이트 제작</span> 
+							<span class="date">2006.3 - 4</span>
+							<span class="link">www.cleanandclear.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:50%;"><span class="txt">HTML/CSS/Script (50%)</span></span>
+				</li>
+				<li class="year-6 year-5"><img src="images/work/screen-igk-1.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">로레알코리아</dt>
+						<dd>
+							<span class="exp">비오템(Biotherm) 제품 홍보 웹사이트 유지보수</span> 
+							<span class="date">2005.11 - 2006.4</span>
+							<span class="link">www.biotherm.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:50%;"><span class="txt">HTML/CSS/Script (50%)</span></span>
+				</li>
+				<li class="year-5"><img src="images/work/screen-2004-4.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">IDH메디칼</dt>
+						<dd>
+							<span class="exp">백색 소음기 SleepMate 브랜드 웹사이트 제작 및 유지보수</span> 
+							<span class="date">2005.4 - 2005.6</span>
+							<span class="link">www.soundscreen.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">Design/HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-5"><img src="images/work/screen-2004-3.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">IDH메디칼</dt>
+						<dd>
+							<span class="exp">휴대용 쇼변기 TravelJohn 브랜드 웹사이트 제작 및 유지보수</span> 
+							<span class="date">2005.2 - 2005.6</span>
+							<span class="link">www.traveljohn.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">Design/HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-5 year-4"><img src="images/work/screen-2004-2.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">IDH메디칼</dt>
+						<dd>
+							<span class="exp">야뇨경보기 BYEWET 브랜드 웹사이트 제작 및 유지보수</span> 
+							<span class="date">2004.12 - 2005.5</span>
+							<span class="link">www.idhmed.com</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">Design/HTML/CSS/Script (100%)</span></span>
+				</li>
+				<li class="year-4"><img src="images/work/screen-off.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">이트랜스펌</dt>
+						<dd>
+							<span class="exp">번역 서비스 기업 웹사이트 제작</span>
+							<span class="date">2004.12</span>
+							<span class="link">www.etransfirm.com</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:100%;"><span class="txt">HTML/CSS (100%)</span></span>
+				</li>
+				<li class="year-4"><img src="images/work/screen-2004-1.jpg" alt="" class="thumnail" />
+					<dl class="work-info">
+						<dt class="corp">ING생명</dt>
+						<dd>
+							<span class="exp">보험 안내 웹사이트 리뉴얼</span>
+							<span class="date">2004.11</span>
+							<span class="link">www.inglife.co.kr</span>
+						</dd>
+					</dl>
+					<span class="bar" style="width:50%;"><span class="txt">HTML/CSS (50%)</span></span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">Copyright &copy; 2001-2018 By <a href="mailto:arimaya@naver.com">HANAJUNG</a>. All Rights Reserved.</div>
+</div>
+</body>
+</html>
