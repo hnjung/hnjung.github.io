@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+.project89-content0 {height: 100vh; background: url('../../images/work/project89/content0.jpg') no-repeat 50% 50%; background-size: 1920px auto; background-attachment: fixed;}
+.project89-content1 {height: 100vh; background: url('../../images/work/project89/content1.jpg') no-repeat 50% 50%; background-size: 1920px auto; background-attachment: fixed;}
+.project89-content2 {height: 100vh; background: url('../../images/work/project89/content2.jpg') no-repeat 50% 50%; background-size: 1920px auto; background-attachment: fixed;}
+.project89-content3-bg {background: url('../../images/work/project89/content3-bg.jpg') no-repeat 50% 0;}
+.project89-content4 .work-item-slide-bg {height: 787px; background-image: url('../../images/work/project89/content4-bg.png'); background-repeat: no-repeat; background-position: 0 0;}
+.project89-content4 .work-item-slide {height: 407px;}
+.project89-content4 .work-item-slide .item {background-image: url('../../images/work/project89/content4-item0.jpg'); background-repeat: no-repeat; background-position: 0 0;}
+.project89-content4 .work-item-slide .item:nth-child(2) {background-image: url('../../images/work/project89/content4-item1.jpg');}
+.project89-content4 .work-item-slide .item:nth-child(3) {background-image: url('../../images/work/project89/content4-item2.jpg');}
+
+@media screen and (max-width: 1366px) {
+	.project89-content0 {background-size: 1680px auto;}
+	.project89-content1 {background-size: 1680px auto;}
+	.project89-content2 {background-size: 1680px auto;}
+}
+
+@media screen and (max-width: 1024px) {
+	.project89-content0 {height: 654px; background-size: 1024px auto;}
+	.project89-content1 {height: 621px; background-size: 1024px auto;}
+	.project89-content2 {height: 602px; background-size: 1024px auto;}
+
+	.project89-content3-bg {background-size: cover;}
+	.project89-content4 .work-item-slide-bg {height: 420px; background-position: 50% 0; background-size: 1024px auto;}
+	.project89-content4 .work-item-slide {height: 217px;}
+	.project89-content4 .work-item-slide .item {background-position: 50% 0; background-size: 1024px auto;}
+}
+
+@media screen and (max-width: 768px) {
+	.project89-content0 {height: auto; padding-bottom: 73.4%; background-size: 115.2% auto; background-attachment: scroll;}
+	.project89-content1 {height: auto; padding-bottom: 69.8%; background-size: 115.2% auto; background-attachment: scroll;}
+	.project89-content2 {height: auto; padding-bottom: 67.8%; background-size: 115.2% auto; background-attachment: scroll;}
+	.project89-content3-bg {background-image: url('../../images/work/project89/content3-bg-mo.jpg');}
+	.project89-content4.work-design {width: calc(100% - 72px); margin: 0 auto;}
+	.project89-content4 .work-item-slide-bg {width: 100%; height: auto; padding-top: 181.2%; padding-bottom: 0; margin-bottom: 120px; background-image: url('../../images/work/project89/content4-bg-mo.png'); background-size: 100% auto;}
+	.project89-content4 .work-item-slide {top: 0; width: 100%; height: auto; padding-top: 181.2%;}
+	.project89-content4 .work-item-slide .item {background-image: url('../../images/work/project89/content4-item0-mo.jpg'); background-size: 100% auto;}
+	.project89-content4 .work-item-slide .item:nth-child(2) {background-image: url('../../images/work/project89/content4-item1-mo.jpg');}
+	.project89-content4 .work-item-slide .item:nth-child(3) {background-image: url('../../images/work/project89/content4-item2-mo.jpg');}
+}
