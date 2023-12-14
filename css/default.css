@@ -1,0 +1,74 @@
+@charset "euc-kr"; 
+@import url("/css/style.css");
+
+/* Type Selector */
+*{margin:0; padding:0; font-family:"³ª´®°íµñ", NanumGothic, "µ¸¿ò", Dotum, "±¼¸²", Gulim, AppleGothic, Sans-serif;}
+img, fieldset, button{border:none;}
+hr, button img{display:none;}
+li{list-style:none;}
+a{text-decoration:none; color:#000;}
+a:hover, a:active, a:focus{text-decoration:underline;}
+textarea{overflow:auto;} 
+html:first-child select{padding-right:6px; height:20px;} /* Opera 9 & Below Fix */ 
+option {padding-right:6px;} /* Firefox Fix */
+legend {position:absolute; top:0; left:0; width:0; height:0; overflow:hidden; visibility:hidden; font-size:0; line-height:0;} /* For Screen Reader */ 
+
+/* Layout Selector */
+body{background:#ffa200;}
+#wrap{max-width:820px;}
+#header{position:relative; width:100%; height:38px; text-align:right;}
+#container{}
+#content{position:relative; overflow:hidden; width:100%; margin:0 auto; padding:48px 0 62px 0;}
+#footer{position:relative; width:100%; height:14px; text-align:right; margin:-14px 0 0 0; font-size:0.6em; line-height:100%; color:#666;} 
+.snb{width:92%; margin:0 auto;}
+.aside{}
+
+/* Class Selector */
+.input_text{font-size:0.7em; border:1px dashed #ffc560; color:#666; margin:1px 0; padding:1px 4px 2px 4px;}
+.input_submit{font-size:0.7em; border:none; background:#ffc560; color:#fff; font-weight:bold; padding:1px 1px 1px 1px;}
+.input_check{}
+.input_radio{}
+
+/* Header */
+#header div.logo{position:absolute; top:10px; left:-4px; color:#fff; font-size:2.1em; font-weight:bold; letter-spacing:0.2em; line-height:100%;}
+#header div.gnb{position:relative; top:5px; right:5px;}
+#header div.gnb ul{}
+#header div.gnb ul li{display:inline; line-height:210%; font-size:0.8em; padding:2px 7px 3px 7px; margin:0 2px 0 0; border:1px dashed #fff; background:#ffc560;}
+#header div.gnb ul li a{color:#fff; font-weight:bold;}
+#header div.gnb ul li.admin{margin-left:10px; background:#ffd182;}
+#header div.gnb ul li.on{border:1px solid #fff; background:#fff;}
+#header div.gnb ul li.on a{color:#ffa200;}
+/* Footer */
+#footer{}
+
+/* Navigation */
+ul.snb{padding:0 0 8px 0;}
+ul.snb li{display:inline; line-height:190%; font-size:0.7em; padding:2px 6px 3px 6px; margin:0 2px 0 0; border:1px dashed #ffc560;}
+ul.snb li a{color:#ffa200; font-weight:bold;}
+ul.snb li.on{border:1px dashed #fff; background:#ffc560;}
+ul.snb li.on a{color:#fff;}
+
+/* Aside */
+.aside{} 
+
+/* Content */
+#content{}
+#content h1{position:absolute; top:-5px; left:140px; color:#ffa200; font-size:1.6em; line-height:100%; letter-spacing:0.1em;}
+#content p{font-size:0.7em;}
+
+.path{}
+
+/* Paging */
+.paging{position:relative; padding:8px 0 0 0; text-align:center; width:92%; height:22px; margin:0 auto;}
+.paging *{margin:0; padding:0; line-height:120%;}
+
+.paging span.total{position:absolute; top:6px; left:0px; font-size:0.6em; color:#666;}
+
+.paging a,
+.paging strong{display:inline-block; margin-right:-6px; padding:0 4px 0 4px; color:#666; text-decoration:none; line-height:normal; font-size:0.6em;}
+.paging strong{font-weight:bold;}
+
+.paging a.pre{padding:0 6px 0 4px; font-family:Dotum;}
+.paging a.pre_end{padding:0 6px 0 4px; font-family:Dotum;}
+.paging a.next{padding:0 4px 0 6px; font-family:Dotum;}
+.paging a.next_end{padding:0 4px 0 6px; font-family:Dotum;}
