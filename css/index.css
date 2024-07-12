@@ -4,7 +4,7 @@
 html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, xmp, del, dfn, em, img, ins, samp, small, strike, strong, sub, sup, tt, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, section, summary, time, audio, video {margin: 0; padding: 0;}
 article, aside, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
 html {-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -webkit-tap-highlight-color: rgba(0,0,0,0);}
-body {line-height: 1.5; font-family: 'Montserrat', 'Noto Sans KR', '돋움', 'Dotum', helvetica, arial, sans-serif; font-weight: 300; font-size: 16px; color: #252525;}
+body {line-height: 1.5; font-family: 'Pretendard Variable', Pretendard, '돋움', 'Dotum', helvetica, arial, sans-serif; font-weight: 300; font-size: 16px; color: #252525;}
 h1, h2, h3, h4, h5, h6, em, strong, th {font-weight: 500;}
 ul, li {list-style: none;}
 em, i, address {font-style: normal;}
